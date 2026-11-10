@@ -10,3 +10,10 @@ module.exports = function (eleventyConfig) {
     },
   };
 };
+import { eleventyPluginIsLand } from "@11ty/is-land";
+
+export default function (eleventyConfig) {
+  eleventyConfig.addPlugin(eleventyPluginIsLand);
+
+  eleventyConfig.addPassthroughCopy("src/js");
+}
