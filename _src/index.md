@@ -9,7 +9,7 @@ layout: base.njk
 
   <div id="counter" v-scope="{ count: 0 }">
     <p>Count: <span v-text="count"></span></p>
-    <button @click="count++">Add five</button>
+    <button @click="count += 5">Add five</button>
   </div>
 
   <template data-island>
