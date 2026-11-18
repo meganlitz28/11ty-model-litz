@@ -18,12 +18,10 @@ layout: base.njk
   <section class="topic" v-show="active === 'all' || active === 'sketches'">
     <h3>AI</h3>
     <img src="img/images.jpeg" alt="ai image">
-    
   </section>
   <section class="topic" v-show="active === 'all' || active === 'photos'">
     <h3>Development</h3>
     <img src="img/development.jpeg" alt="Describe this image">
-   
   </section>
   <section class="topic" v-show="active === 'all' || active === 'type'">
     <h3>Ethic Principle</h3>
