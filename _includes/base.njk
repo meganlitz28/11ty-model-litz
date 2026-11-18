@@ -19,7 +19,9 @@
 <h1>{{title}}</h1>
     {{ content | safe }}
    
-
+<footer>
+  <p>Page last updated: {{ page.date.toLocaleDateString() }}</p>
+</footer>
    
 </body>
 </html>
