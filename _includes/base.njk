@@ -17,9 +17,15 @@
   <h1>{{title}}</h1>
   {{ content | safe }}
 
-  <footer>
-    <p>Page last updated: {{ page.date.toLocaleDateString() }}</p>
-  </footer>
+ <footer>
+  <p>Page last updated: {{ page.date.toLocaleDateString() }}</p>
+  <p>
+    <a href="https://www.aihonestybadge.com/ai-assisted-badge" title="AI helped with the content and development of this site">
+      <img src="https://www.aihonestybadge.com/badges/ai-assisted-small.svg" alt="AI Assisted badge">
+    </a>
+    This site is AI assisted. <a href="ai-use.html">How I used AI</a>
+  </p>
+</footer>
 </div>
 </body>
 </html>
