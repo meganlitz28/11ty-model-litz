@@ -1,3 +1,13 @@
 body {
     background-color: rgb(90, 164, 167);
 }
+
+.experience-picker { border:1px solid #c9d3d8; padding:.75rem 1rem; margin:0 0 1rem; }
+.experience-picker legend { padding:0 .4rem; font-weight:bold; }
+.experience-picker label { display:inline-block; margin-right:1rem; }
+.sim-note { font-style:italic; margin:.5rem 0 0; }
+
+[data-sim-target].sim-low { filter: blur(1.6px) contrast(.7); }
+[data-sim-target].sim-cvd { filter: url(#deutan); }
+[data-sim-target].sim-key,
+[data-sim-target].sim-key * { cursor: none !important; }
