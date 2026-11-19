@@ -2,17 +2,12 @@
 <html lang="en">
 <head>
      <meta charset="UTF-8">
-     <meta name="viewport" 
-           content="width=device-width, 
-           user-scalable=no, 
-           initial-scale=1.0, 
-           maximum-scale=1.0, 
-           minimum-scale=1.0">
-     <meta http-equiv="X-UA-Compatible" 
-           content="ie=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <title>Tech Issue Resource Guide</title>
      <link rel="stylesheet" href="style.css">
      <script type="module" src="js/is-land.js"></script>
+     <script src="see-it.js" defer></script>
 </head>
 <body>
 <nav>
@@ -21,8 +16,25 @@
 <a href="guide.html">Guide</a>
 
 </nav>
-<h1>Tech Issue Resource Guide</h1>
-    <h2>Hello world!</h2>
+<svg width="0" height="0" aria-hidden="true" focusable="false">
+  <filter id="deutan"><feColorMatrix type="matrix"
+    values="0.43 0.72 -.15 0 0  0.34 0.57 0.09 0 0  -.02 .03 1 0 0  0 0 0 1 0"/></filter>
+</svg>
+
+<fieldset class="experience-picker">
+  <legend>Experience this as</legend>
+  <label><input type="radio" name="sim" value="none" checked> Typical</label>
+  <label><input type="radio" name="sim" value="low"> Low vision</label>
+  <label><input type="radio" name="sim" value="cvd"> Red-green color blind</label>
+  <label><input type="radio" name="sim" value="key"> Keyboard only</label>
+  <p class="sim-note" id="sim-note" aria-live="polite" hidden>
+    Mouse hidden. Try pressing Tab to move around.
+  </p>
+</fieldset>
+
+<div data-sim-target>
+  <h1>Tech Issue Resource Guide</h1>
+  <h2>Hello world!</h2>
 <is-land on:visible>
   <div id="counter" v-scope="{ count: 0 }">
     <p>Count: <span v-text="count"></span></p>
@@ -36,10 +48,10 @@
   </template>
 </is-land>
 
-   
-<footer>
-  <p>Page last updated: 10/29/2026</p>
-</footer>
-   
+
+  <footer>
+    <p>Page last updated: 10/29/2026</p>
+  </footer>
+</div>
 </body>
 </html>
